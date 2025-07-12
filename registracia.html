@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vhod</title>
+    <title>registracia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/registracia.css">
 </head>
 <body>
     <!-- ⁡⁢⁣⁡⁣⁢⁣Заголовок⁡⁡ -->
@@ -11,21 +15,21 @@
         <nav>
             <a href="./index.html" class="logo"><img src="./img/logo.svg" alt=""></a>
             <ul class="site-nav">
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="#">Договоры</a></li>
-                <li><a href="#">Студенты</a></li>
+                <li><a href="./index.html" class="link">Главная</a></li>
+                <li><a href="#" class="link">Договоры</a></li>
+                <li><a href="#" class="link">Студенты</a></li>
             </ul>
 
-            <ul>
-                <li><a href="./registracia.html">Регистрация</a></li>
-                <li><a href="./Vhod.html">Войти</a></li>
+            <ul class="auto-nav">
+                <li><a href="./registracia.html" class="button-reg">Регистрация</a></li>
+                <li><a href="./Vhod.html" class="button">Войти</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div>
-            <a href=""><img src="./img/Zadni_fon.jpg" alt="fon" width="1920" height="1440"></a>
+            <a href=""><img src="./img/registr-icon.svg" alt="fon"></a>
         </div>
             <img src="./img/iconca_avatar.png" width="192" height="192" alt="icon">
             <h1>Регистрация</h1>
@@ -34,7 +38,8 @@
             <li><img src="./img/logopoh.svg" alt="logok"><p>Пароль *</p></li>
             <li><img src="./img/logopovtor.svg" alt="povtorkey"><p>Повторите пароль *</p></li>
         </ul>
-        <a href="#">Зарегистрироваться</a>
+        <div>
+        <button type="button" class="button-reg-a">Зарегистрироваться</button></div>
     </main>
 </body>
 </html>

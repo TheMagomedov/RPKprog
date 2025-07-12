@@ -1,0 +1,30 @@
+ul{
+    list-style: none;
+}
+
+.site-nav .link{
+    color: var(--primari-text-collor);
+}
+.site-nav .link:focus, .site-nav .link:hover{
+   color:  #ffff;
+}
+
+.auto-nav .button{
+    color: var(--primari-text-collor);
+    background-color: var(--primari-bg-collor-nav); 
+}
+.auto-nav .button-reg{
+    color: #eb0808 ;
+    background-color: var(--primari-bg-collor-nav);
+}
+
+.auto-nav .button:focus, .auto-nav .button:hover{
+    color: #ffff;
+}
+.auto-nav .button-reg:focus, .auto-nav .button-reg:hover{
+    color: #ffff;
+}
+.button-reg-a{
+    color: var(--primari-text-collor);
+    background-color: #1997FE;
+}

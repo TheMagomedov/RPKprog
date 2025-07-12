@@ -1,0 +1,15 @@
+:root{
+    --primari-text-collor: #000;
+    --primari-white-collor: #fff;
+    --primari-bg-collor-nav: #F1733C;
+}
+
+body{
+    background-color: var(--primari-white-collor);
+    color: var(--primari-text-collor);
+
+    font-family:Poppins, sans-serif;
+}
+/* #437EF7 */
+/* #1997FE */
+/* #7D7A74 */

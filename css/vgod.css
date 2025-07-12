@@ -1,0 +1,31 @@
+ul{
+    list-style: none;
+}
+.site-nav .link{
+    color: var(--primari-text-collor) ;
+}
+.site-nav .link:hover,.site-nav .link:focus{
+    color: #ffff;
+}
+.button-vhod{
+    color: #eb0808;
+    background-color: var(--primari-bg-collor-nav);
+}
+.button{
+    color: var(--primari-text-collor);
+    background-color: var(--primari-bg-collor-nav);
+}
+.button-vhod:hover, .button-vhod:focus{
+    color: #ffff ;
+}
+    
+.button:focus,.button:hover{
+    color: #ffff ;
+}
+.button-vhod-a{
+    color: var(--primari-text-collor);
+    background-color: #1997FE;
+}
+.button-vhod-a:focus,.button-vhod-a:hover{
+    color: #ffff;
+}   

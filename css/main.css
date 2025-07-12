@@ -1,0 +1,28 @@
+
+
+ul{
+    list-style: none;
+}
+
+.site-nav .link{
+    color: var(--primari-text-collor);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color:#ffff ;
+}
+.site-nav .link.current{
+    color: #eb0808;
+}
+.page-footer .info-z{
+    color:#7D7A74;
+}
+
+.button{
+    color: var(--primari-text-collor);
+    background-color: var(--primari-bg-collor-nav);
+}
+.button:hover,.button:focus{
+    color: #ffff;
+}
