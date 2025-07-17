@@ -7,6 +7,7 @@
     --footer-color:#1997FE;
 }
 body{
+    margin: 0;
     background-color: var(--primari-white-collor);
     color: var(--primari-text-collor);
 
@@ -15,6 +16,18 @@ body{
 
 ul{
     list-style: none;
+}
+
+.page-hader{
+    background-color: #437EF7;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 1920px;
+    outline: 2px solid firebrick;
 }
 
 .logo{
@@ -43,12 +56,19 @@ ul{
 }
 
 .auto-nav .button{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 30px;
+    height: 44px;
+
+
     color: var(--primari-text-color);
     background-color: var(--primari-bg-color-nav);
     font-weight: 600;
     font-size: 36px;
     line-height: 1.5;
     text-decoration: none;
+    text-align: center;
 }
 
 .auto-nav .button:focus, .auto-nav .button:hover{
@@ -130,10 +150,6 @@ ul{
     line-height: 1.5;
 }
 
-.auto-nav .button-reg:hover, .auto-nav .button-reg:focus{
-    color: var(--primari-white-color);
-}
-
 .site-nav-registracia{
     text-align: center;
 
@@ -154,7 +170,7 @@ ul{
 }
 
 .button-reg-a{
-    font-weight: 400;
+    font-weight: 400; 
     font-size: 48px;
     color: rgba(0, 0, 0, 0.8);
     background-color: var(--header-color);
@@ -166,9 +182,28 @@ ul{
 }
 
 .avatar-logo{
-    text-align: center;
+    display: inline-block;
+
 }
 
 .logo-reg{
+    text-align: center;
+}
+
+.button-vhod{
+    color: #eb0808;
+    background-color: var(--primari-bg-color-nav);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.site-nav-vhod{
+    text-align: center;
+}
+
+.vhod-h{
+    font-weight: 400;
+    font-size: 36px;
     text-align: center;
 }
