@@ -1,11 +1,12 @@
 :root{
-    --primari-text-color: #000;
-    --primari-white-color: #fff;
+    --primari-text-collor: #000;
+    --primari-white-collor: #fff;
     --primari-bg-color-nav: #F1733C;
     --info-color:#7D7A74;
-    --header-color:#437EF7;
-    --footer-color:#1997FE;
+    --header-color:rgba(67, 126, 247, 1);
+    --footer-color:rgba(25, 151, 254, 0.4);
 }
+
 body{
     margin: 0;
     background-color: var(--primari-white-collor);
@@ -14,7 +15,31 @@ body{
     font-family:Poppins, sans-serif;
 }
 
+.container-test{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1920px;
+    padding-right:50px;
+    padding-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .container{
+    width: calc((100% - 60px) /3);
+    margin-right: 30px;
+}
+
+.container:nth-child(4n){
+    margin-right: 0;
+} */
 ul{
+    list-style: none;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -22,21 +47,39 @@ ul{
     background-color: #437EF7;
 }
 
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    height: 180px;
-    width: 1920px;
-    outline: 2px solid firebrick;
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
+
 .logo{
+    margin-left: 120px;
     width: 169px;
     height: 142px;
 }
 
+.site-nav{
+    display: flex;
+}
+
+.site-nav .item:not(:last-child){
+    margin-right: 40px;
+}
+
+.site-nav .nav{
+    margin-left: 55px;
+}
+
 .site-nav .link-current{
+    margin-left: 55px;
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px ;
+
     color: #eb0808;
+
     font-weight: 600;
     font-size: 36px;
     line-height: 1.5;
@@ -44,7 +87,12 @@ ul{
 }
 
 .site-nav .link{
-    color: var(--primari-text-collor) ;
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px; 
+
+    color: var(--primari-text-collor);
+
     font-weight: 600;
     font-size: 36px;
     line-height: 1.5;
@@ -53,6 +101,16 @@ ul{
 
 .site-nav .link:hover,.site-nav .link:focus{
     color: var(--primari-white-color);
+}
+
+.auto-nav{
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.auto-nav .item + .item{
+    margin-left:20px;
 }
 
 .auto-nav .button{
@@ -68,7 +126,6 @@ ul{
     font-size: 36px;
     line-height: 1.5;
     text-decoration: none;
-    text-align: center;
 }
 
 .auto-nav .button:focus, .auto-nav .button:hover{
@@ -76,39 +133,78 @@ ul{
 }
 
 .main-logo{
-    text-align: center;
+    max-width: 1322px;
+    height: 600px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.page-footer{
+    background-color: var(--footer-color);
 }
 
 .info-zanami{
+    margin-left: 75px;
+    margin-top: 90px;
+    margin-bottom: 0;
     color: var(--primari-text-color);
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
 }
 
-.telegram-info{
+.info-zanami .sled{
+    margin-left: 75px;
+    margin-top: 90px;
+    margin-bottom: 0;
+    padding-top:17px ;
+    color: var(--primari-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.addres-logo{
+    display: flex;
+}
+
+.addres-logo .telegram + .vk{
+    margin-left:30px;
+}
+
+.telegram{
+    display: block;
+    margin-left: 170px;
     width: 50px;
     height: 47px;
 
 }
 
-.vk-info{
+.vk{
+    display: block;
     width: 50px;
     height: 50px;
 }
 
 .page-footer .info-z{
+    margin:0;
+    text-align: center;
     color: var(--info-color);
     font-weight: 400;
     font-size: 15px;
     line-height: 1.53;
 }
 
-.contact{
+.contact-class{
+    display: flex;
+    padding-top: 17px;
+    margin: 0;
+    padding-right: 300px;
     color: var(--primari-text-color);
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
+    justify-content: flex-end;
 }
 
 .adress{
@@ -127,6 +223,7 @@ ul{
 }
 
 .adress .Telefon-contact{
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.5);
