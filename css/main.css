@@ -1,0 +1,306 @@
+:root{
+    --primari-text-collor: #000;
+    --primari-white-collor: #fff;
+    --primari-bg-color-nav: #F1733C;
+    --info-color:#7D7A74;
+    --header-color:rgba(67, 126, 247, 1);
+    --footer-color:rgba(25, 151, 254, 0.4);
+}
+
+body{
+    margin: 0;
+    background-color: var(--primari-white-collor);
+    color: var(--primari-text-collor);
+
+    font-family:Poppins, sans-serif;
+}
+
+.container-test{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1920px;
+    padding-right:50px;
+    padding-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .container{
+    width: calc((100% - 60px) /3);
+    margin-right: 30px;
+}
+
+.container:nth-child(4n){
+    margin-right: 0;
+} */
+ul{
+    list-style: none;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-hader{
+    background-color: #437EF7;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.logo{
+    margin-left: 120px;
+    width: 169px;
+    height: 142px;
+}
+
+.site-nav{
+    display: flex;
+}
+
+.site-nav .item:not(:last-child){
+    margin-right: 40px;
+}
+
+.site-nav .nav{
+    margin-left: 55px;
+}
+
+.site-nav .link-current{
+    margin-left: 55px;
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px ;
+
+    color: #eb0808;
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.site-nav .link{
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px; 
+
+    color: var(--primari-text-collor);
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.site-nav .link:hover,.site-nav .link:focus{
+    color: var(--primari-white-color);
+}
+
+.auto-nav{
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.auto-nav .item + .item{
+    margin-left:20px;
+}
+
+.auto-nav .button{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 30px;
+    height: 44px;
+
+
+    color: var(--primari-text-color);
+    background-color: var(--primari-bg-color-nav);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.auto-nav .button:focus, .auto-nav .button:hover{
+    color: var(--primari-white-color);
+}
+
+.main-logo{
+    max-width: 1322px;
+    height: 600px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.page-footer{
+    background-color: var(--footer-color);
+}
+
+.info-zanami{
+    margin-left: 75px;
+    margin-top: 90px;
+    margin-bottom: 0;
+    color: var(--primari-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.info-zanami .sled{
+    margin-left: 75px;
+    margin-top: 90px;
+    margin-bottom: 0;
+    padding-top:17px ;
+    color: var(--primari-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.addres-logo{
+    display: flex;
+}
+
+.addres-logo .telegram + .vk{
+    margin-left:30px;
+}
+
+.telegram{
+    display: block;
+    margin-left: 170px;
+    width: 50px;
+    height: 47px;
+
+}
+
+.vk{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.page-footer .info-z{
+    margin:0;
+    text-align: center;
+    color: var(--info-color);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.53;
+}
+
+.contact-class{
+    display: flex;
+    padding-top: 17px;
+    margin: 0;
+    padding-right: 300px;
+    color: var(--primari-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    justify-content: flex-end;
+}
+
+.adress{
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.53;
+}
+
+.adress .Email-contact{
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.53;
+    text-decoration: none;
+}
+
+.adress .Telefon-contact{
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.53;
+    text-decoration: none;
+}
+
+.adress .Email-contact:hover, .adress .Email-contact:focus{
+    color: var(--primari-text-color);
+}
+
+.adress .Telefon-contact:hover,.adress .Telefon-contact:focus{
+    color: var(--primari-text-color)
+}
+
+.auto-nav .button-reg{
+    color: #eb0808;
+    background-color: var(--primari-bg-color-nav);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.site-nav-registracia{
+    text-align: center;
+
+}
+
+.registracia{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.info-reg{
+    font-weight: 400;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.button-reg-a{
+    font-weight: 400; 
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: var(--header-color);
+    text-align: center;
+}
+
+.button-reg-a:hover, .button-reg-a:focus{
+    color: var(--primari-white-color);
+}
+
+.avatar-logo{
+    display: inline-block;
+
+}
+
+.logo-reg{
+    text-align: center;
+}
+
+.button-vhod{
+    color: #eb0808;
+    background-color: var(--primari-bg-color-nav);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.site-nav-vhod{
+    text-align: center;
+}
+
+.vhod-h{
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+}

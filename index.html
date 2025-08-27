@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo app</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <!-- ⁡⁢⁣⁣Заголовок⁡ -->
     <header class="page-hader">
-        <nav>
+        <nav class="container main-nav">
             <a href="./index.html" class="logo"><img src="./img/logo.svg" alt=""></a>
 
-            <ul class="site-nav">
-                <li><a href="#" class="link">Главная</a></li>
-                <li><a href="#" class = "link">Договоры</a></li>
-                <li><a href="#" class="link">Студенты</a></li>
+            <ul class="site-nav list">
+                <li class="item"><a href="./index.html" class="link-current">Главная</a></li>
+                <li class="item"><a href="#" class = "link">Договоры</a></li>
+                <li class="item"><a href="#" class="link">Студенты</a></li>
             </ul>
 
-            <ul class="auto-nav">
-                <li><a href="./registracia.html">Регистрация</a></li>
-                <li><a href="./Vhod.html">Войти</a></li>
+            <ul class="auto-nav list">
+                <li class="item"><a href="./registracia.html" class = "button">Регистрация</a></li>
+                <li class="item"><a href="./Vhod.html" class="button">Войти</a></li>
             </ul>
         </nav>
     </header>
     <!-- ⁡⁣⁣⁢Главная часть программы <<main>>⁡ -->
     <main>
-            <div>
-            <a href="#"><img src="./img/Nice_to_meet_you.svg" alt="Nice"></a>
+            <div class="main-logo">
+            <img src="./img/Nice_to_meet_you.svg" alt="Nice">
             </div>
     </main>
     <!-- ⁡⁢⁣⁣Футер⁡ -->
      <footer class="page-footer">
 
-        <h1>Следите за нами</h1>
-        <address>
-        <a href="#"><img src="./img/telegram_logo.svg" alt="telegram"></a>
-        <a href="#"><img src="./img/vk_log.svg" alt="vk"></a>
+        <div class="info-zanami"><h1 class="sled">Следите за нами</h1></div>
+        <address class="addres-logo">
+        <a href="https://t.me/rpk_kizlyar"class="telegram info"><img src="./img/telegram_logo.svg" alt="telegram"></a>
+        <a href="#"class="vk info"><img src="./img/vk_log.svg" alt="vk"></a>
         </address>
          
         <p class="info-z"> &copy; Все авторские права защищены</p>
 
-        <h1>Контакты</h1>
-        <address>
-        <p>Email : <a href="#">shiytimtim@mail.ru</a></p>
-        <p>Телефон : <a href="#">8 (87239) 3-03-82</a></p>
+        <div class="contact"><h1 class="contact-class">Контакты</h1></div>
+        <address class="adress">
+        <p>Email : <a href="#"class="Email-contact">shiytimtim@mail.ru</a></p>
+        <p class="Telefon-contact">Телефон : <a href="#"class="Telefon-contact">8 (87239) 3-03-82</a></p>
         </address>
 
      </footer>

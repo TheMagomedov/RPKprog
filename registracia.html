@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vhod</title>
+    <title>registracia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <!-- ⁡⁢⁣⁡⁣⁢⁣Заголовок⁡⁡ -->
     <header class="page-hader">
-        <nav>
+        <nav class="container main-nav">
             <a href="./index.html" class="logo"><img src="./img/logo.svg" alt=""></a>
-            <ul class="site-nav">
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="#">Договоры</a></li>
-                <li><a href="#">Студенты</a></li>
+            <ul class="site-nav list">
+                <li class="item"><a href="./index.html" class="link nav">Главная</a></li>
+                <li class="item"><a href="#" class="link">Договоры</a></li>
+                <li class="item"><a href="#" class="link">Студенты</a></li>
             </ul>
 
-            <ul>
-                <li><a href="./registracia.html">Регистрация</a></li>
-                <li><a href="./Vhod.html">Войти</a></li>
+            <ul class="auto-nav list">
+                <li class="item"><a href="./registracia.html" class="button reg">Регистрация</a></li>
+                <li class="item"><a href="./Vhod.html" class="button">Войти</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div>
-            <a href=""><img src="./img/Zadni_fon.jpg" alt="fon" width="1920" height="1440"></a>
+        <div class="site-nav-registracia">
+            <img src="./img/registr-icon.svg" alt="fon">
         </div>
-            <img src="./img/iconca_avatar.png" width="192" height="192" alt="icon">
-            <h1>Регистрация</h1>
+            <img src="./img/iconca_avatar.png" class="avatar-logo" width="192" height="192" alt="icon">
+            <h1 class="registracia">Регистрация</h1>
         <ul>
-            <li><img src="./img/logokey.svg" alt="logop"><p>E-mail *</p></li>
-            <li><img src="./img/logopoh.svg" alt="logok"><p>Пароль *</p></li>
-            <li><img src="./img/logopovtor.svg" alt="povtorkey"><p>Повторите пароль *</p></li>
+            <li><img src="./img/logokey.svg" alt="logop" class="logo-reg"><p class="info-reg">E-mail *</p></li>
+            <li><img src="./img/logopoh.svg" alt="logok" class="logo-reg"><p class="info-reg">Пароль *</p></li>
+            <li><img src="./img/logopovtor.svg" alt="povtorkey" class="logo-reg"><p class="info-reg">Повторите пароль *</p></li>
         </ul>
-        <a href="#">Зарегистрироваться</a>
+        <div>
+        <button type="button" class="button-reg-a">Зарегистрироваться</button></div>
+        
     </main>
 </body>
 </html>
